@@ -1,0 +1,205 @@
+
+.ham {
+    display: none;
+}
+
+@media only screen and (max-width:1200px){
+    .header-left h1 {
+        margin-top: 4rem;
+        font-size: 3rem;
+    }
+
+    .last-section h1{
+        padding: 0;
+    }
+}
+@media only screen and (max-width:1000px){
+    .header-left h1 {
+        font-size: 2.5rem;
+    }
+    .header-left p {
+        word-spacing: 0;
+    }
+    .feature-left img {
+        height: 513px;
+        width: 513px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .navbar nav ul {
+        display: none;
+    }
+    .feature-left img {
+        height: 450px;
+        width: 450px;
+    }
+
+    .ham {
+        height: 4px;
+        width: 2.5rem;
+        background:rgb(28, 6, 6);
+        display: flex;
+        position: relative;
+        cursor: pointer;
+    }
+    .ham::before,
+    .ham::after {
+        content: "";
+        height: 4px;
+        width: 2.5rem;
+        background:rgb(28, 6, 6);
+        position: absolute;
+        cursor: pointer;
+    }
+    .ham::after {
+        bottom: 0.8rem;
+    }
+    .ham::before{
+        top: 0.8rem;
+    }
+    header .navbar {
+        justify-content: space-between;
+        margin: 0rem 5rem;
+    }
+
+    .header-left h1 {
+        font-size: 2rem;
+    }
+    .header-left p {
+        word-spacing: 0;
+        font-size: 0.8rem;
+        padding-right: 5rem;
+    }
+    .header-left {
+        padding: 1rem 2rem 0rem 4rem;
+    }
+    .header-main {
+        margin-top: 4rem;
+    }
+    .features {
+        flex-direction: column;
+    }
+    .feature-right h1{
+        padding: 0rem;
+    }
+    .feature-right div {
+        padding: 0rem;
+        float: left;
+        margin-left: 2rem;
+    }
+
+}
+
+@media only screen and (max-width:800px){
+    .header-left h1 {
+        font-size: 2rem;
+        padding-right: 0rem 3.5rem;
+    }
+    .header-left p {
+        word-spacing: 0;
+        font-size: 0.8rem;
+        padding-right: 3.5rem;
+    }
+    .header-left {
+        padding: 1rem 2rem 0rem 3rem;
+    }
+    header .navbar{
+    margin: 0rem 3rem;
+    }
+
+    .feature-right h1 {
+        padding: 0;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+    }
+    .feature-right div {
+        padding: 0;
+        margin-left: 4rem;
+    }
+    .cards {
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+    .card {
+        margin-top: 1rem;
+    }
+}
+
+
+@media only screen and (max-width:650px){
+    .header-main {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+    .header-left {
+        padding: 2rem;
+        text-align: center;
+        /* margin-top: 2rem; */
+    }
+  
+    .header-left h1 , .header-left p {
+        padding: 0;
+    }
+    .header-left h1 {
+       font-size: 2rem;
+    }
+    .header-left p {
+        font-size: 0.8rem;
+    }
+    .header-right img{
+        height: 20rem;
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .header-left h1 {
+        font-size: 1.5rem;
+     }
+     .header-left p {
+         font-size: 0.7rem;
+     }
+     .header-right img{
+        height: 15rem;
+    }
+    .ham, .ham::after,.ham::before {
+        width: 2rem;
+    }
+    header .navbar {
+        justify-content: space-between;
+        margin: 0rem 1.5rem;
+    }
+    .logo img{
+        width: 6rem;
+    }
+
+    .feature-left img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .feature-right h1 {
+        margin-left: 1rem ;
+        font-size: 1.2rem;
+    }
+    .feature-details {
+        margin-left: 3rem;
+    }
+    .feature-details h2 {
+        font-size: 1.1rem;
+    }
+    .feature-details p {
+        font-size: 0.8rem;
+    }
+   
+}
+
+@media only screen and (max-width:300px) {
+    .card {
+        height: 20rem;
+    }
+    
+}
